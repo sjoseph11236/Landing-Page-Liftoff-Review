@@ -81,6 +81,7 @@ header nav {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
+  transition: all 1s;
 }
 .nav-item a:hover {
   color: #202b47;
