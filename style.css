@@ -57,12 +57,14 @@ header {
   background-color: rgba(37, 37, 37, 0.8);
   border-radius: 0 0 1em 1em;
   z-index: 2;
-  transform: translateY(-2.5em);
-  transition: transfrom 0.5s;
+  opacity: 0;
+  transform: translateY(-4em);
+  transition: opacity .25s, transfrom 0.5s;
 }
 /* the close class name to the tag targets elements with both tag and class */
 header.active {
   transform: translateY(0);
+  opacity: 1;
 }
 
 header .logo {
