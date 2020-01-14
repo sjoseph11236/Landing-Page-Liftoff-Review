@@ -3,12 +3,9 @@ const images = document.querySelectorAll('.carousel-image');
 let  currentImageIndex = 0; 
 
 setInterval(() => {
-  console.log('WORKS');
-
   images[currentImageIndex].classList.add('hidden');
-
   currentImageIndex++;
-  
+
   if(currentImageIndex > 3) {
     currentImageIndex = 0;
   }
