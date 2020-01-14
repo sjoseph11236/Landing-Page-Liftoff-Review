@@ -57,6 +57,12 @@ header {
   background-color: rgba(37, 37, 37, 0.8);
   border-radius: 0 0 1em 1em;
   z-index: 2;
+  transform: translateY(-2.5em);
+  transition: transfrom 0.5s;
+}
+/* the close class name to the tag targets elements with both tag and class */
+header.active {
+  transform: translateY(0);
 }
 
 header .logo {
@@ -83,7 +89,7 @@ header nav {
   border-radius: 5px;
   transition: all 1s;
   /*  specify single or multple props that are allowed to animate (with individual durations)*/
-  transition: color 1s, backgroun-color 0.5s;
+  /* transition: color 1s, backgroun-color 0.5s; */
 }
 .nav-item a:hover {
   color: #202b47;
